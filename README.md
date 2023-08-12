@@ -14,3 +14,8 @@
     <li>Precio de Entrada:  Si no estás seguro del precio de la entrada, puedes ingresar el monto correspondiente para obtener información precisa antes de adquirir tus boletos. (Se realizó de esta manera como cumplimiento para el reto/actividad)</li>
     <li>Facutra digital: Una vez que hayas seleccionado una película y adquirido los boletos, se generará automáticamente una factura final con todos los detalles de tu compra. </li>
   </ul>
+
+
+<h3> ----- 🎞️ Live Demo 🎞️----- </h3>
+
+[cineKoi](https://jannaca.github.io/cineKoi/index.html)
