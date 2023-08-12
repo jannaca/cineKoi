@@ -18,4 +18,4 @@
 
 <h3> ----- 🎞️ Live Demo 🎞️----- </h3>
 
-[cineKoi](https://jannaca.github.io/cineKoi/index.html)
+[CineKoi](https://jannaca.github.io/cineKoi/index.html){:target="_blank"}
