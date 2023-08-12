@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icono -->
+    <link rel="icon" href="img/icon.png" type="image/x-icon" />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>CineKoi</title>
+  </head>
+
+  <body>
+    <!------MENU-------->
+    <header>
+      <!-- Menu de Navegacion-->
+      <nav>
+        <div class="navbar navbar-dark navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand link-light titulo-nav" href="index.html"
+              >Cinekoi</a
+            >
+            <button
+              class="navbar-toggler border-light-subtle"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link link-light"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link link-light"
+                    aria-current="page"
+                    href="#cartelera"
+                    >Cartelera</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-------PELICULAS------>
+
+      <section class="container">
+        <div class="container p-5" id="contenedor-peliculas">
+          <h2 class="text-center mb-5" id="cartelera">Cartelera</h2>
+          <div class="row peliculas-seleccion justify-content-center">
+            <div class="col-lg-4 col-sm-10">
+              <img
+                src="img/pelicula-mario.webp"
+                class="img-fluid mb-3"
+                alt=""
+              />
+              <div class="info-pelicula">
+                <h5>Título</h5>
+                <p>Super Mario Bros: La película.</p>
+                <h5>Sipnosis</h5>
+                <p>
+                  Película basada en la franquicia de videojuegos Super Mario
+                  Bros. de Nintendo. Estará producida por Shigeru Miyamoto,
+                  creador de la licencia, y la producirá y animará Illumination
+                  Entertainment.
+                </p>
+              </div>
+              <div class="mb-3">
+                <div class="row justify-content-center">
+                  <div class="col-auto">
+                    <button class="btn btn-mario mt-3">Comprar Boleto</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-10">
+              <img
+                src="img/pelicula-suzume.jpg"
+                class="img-fluid mb-3"
+                alt=""
+              />
+              <div class="info-pelicula">
+                <h5>Título</h5>
+                <p>Suzume.</p>
+                <h5>Sipnosis</h5>
+                <p>
+                  Suzume, de 17 años, descubre una misteriosa puerta y pronto
+                  empiezan a aparecer otras puertas por todo Japón. Cuando las
+                  puertas se abren, liberan desastres y depende de Suzume volver
+                  a cerrarlas.
+                </p>
+              </div>
+
+              <div class="row justify-content-center mb-3">
+                <div class="col-auto">
+                  <button class="btn btn-suzume mt-3">Comprar Boleto</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-10">
+              <img
+                src="img/pelicula-antman.jpeg"
+                class="img-fluid mb-3"
+                alt=""
+              />
+              <div class="info-pelicula">
+                <h5>Título</h5>
+                <p>Ant-Man y la Avispa: Quantumanía.</p>
+                <h5>Sipnosis</h5>
+                <p>
+                  Los superhéroes Scott y Cassie Lang, Hope van Dyne y sus
+                  padres, se encuentran accidentalmente atrapados en el reino
+                  cuántico y deben enfrentarse a un nuevo enemigo, Kang el
+                  Conquistador.
+                </p>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <button class="btn btn-antman mt-3">Comprar Boleto</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------DATOS DE LA FUNCION------>
+      <section class="container d-none" id="contenedor-funcion">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="titulos-acciones mt-3">
+              <h4>Función</h4>
+            </div>
+            <div class="border mt-3">
+              <ul class="nav nav-pills py-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-disabled-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-disabled"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-disabled"
+                    aria-selected="false"
+                    disabled
+                  >
+                    Mayo
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active link-fecha"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Lun 15
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                  tabindex="0"
+                >
+                  <div class="caja-datos-funcion py-2">
+                    <div class="caja-datos-1">
+                      <p>Título: <span id="nombre-pelicula"></span></p>
+                      <p>Fecha: <span id="fecha-pelicula"></span></p>
+                      <p>Hora: <span id="hora-pelicula"></span></p>
+                    </div>
+                    <div class="caja-datos-2">
+                      <p>Duración: <span id="duracion-pelicula"></span></p>
+                      <p>Sala <span id="sala-pelicula"></span></p>
+                      <p>Idioma: <span id="idioma-pelicula"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6 text-center">
+            <button class="btn my-4" id="btn-mostrar-compra">Continuar</button>
+          </div>
+        </div>
+      </section>
+      <!-------COMPRA DE BOLETOS------->
+      <section class="container d-none" id="contenedor-compra">
+        <div class="container-tabla row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <div class="titulos-acciones mt-3 text-start">
+              <h4>Compra de Boletos</h4>
+            </div>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Tipo de boleto</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Cantidad</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Boleto general</td>
+                  <td id="contenedor-precio"></td>
+                  <td>
+                    <button class="border-0 p-0" id="btn-restar">
+                      <i class="fa-solid fa-circle-minus"></i>
+                    </button>
+                    <span
+                      class="d-inline-block border rounded cantidad"
+                      id="numero-boletos"
+                      >1</span
+                    >
+                    <button class="border-0 p-0" id="btn-sumar">
+                      <i class="fa-solid fa-circle-plus"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="row justify-content-center m-0">
+          <div class="col-6 text-center">
+            <button class="btn my-4" id="btn-continuar-compra">
+              Continuar
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--------- BUTACAS --------->
+      <section class="container p-5 d-none" id="contenedor-butacas">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 titulo-butaca mt-3">
+            <h4>Seleccionar Butacas</h4>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div
+            class="col-12 text-center butacas-status d-flex flex-column justify-content-center d-inline-flex"
+          >
+            <p>Disponible <i class="fa-solid fa-couch info-disponible"></i></p>
+            <p>
+              Seleccionado <i class="fa-solid fa-couch info-seleccionado"></i>
+            </p>
+          </div>
+          <div class="col-7">
+            <div
+              class="text-center d-flex justify-content-center align-items-center butacas"
+            >
+              <span class="col-auto mt-5">B</span>
+              <div>
+                <p>1</p>
+                <i
+                  class="fa-solid fa-couch icono-butaca disponible"
+                  numero-butaca="B-1"
+                ></i>
+              </div>
+              <div>
+                <p>2</p>
+                <i
+                  class="fa-solid fa-couch icono-butaca disponible"
+                  numero-butaca="B-2"
+                ></i>
+              </div>
+              <div>
+                <p>3</p>
+                <i
+                  class="fa-solid fa-couch icono-butaca disponible"
+                  numero-butaca="B-3"
+                ></i>
+              </div>
+              <div>
+                <p>4</p>
+                <i
+                  class="fa-solid fa-couch icono-butaca disponible"
+                  numero-butaca="B-4"
+                ></i>
+              </div>
+              <div>
+                <p>5</p>
+                <i
+                  class="fa-solid fa-couch icono-butaca disponible"
+                  numero-butaca="B-5"
+                ></i>
+              </div>
+            </div>
+
+            <div
+              class="text-center d-flex justify-content-center align-items-center butacas"
+            >
+              <span class="col-auto">A</span>
+              <i
+                class="fa-solid fa-couch icono-butaca disponible"
+                numero-butaca="A-1"
+              ></i>
+              <i
+                class="fa-solid fa-couch icono-butaca disponible"
+                numero-butaca="A-2"
+              ></i>
+              <i
+                class="fa-solid fa-couch icono-butaca disponible"
+                numero-butaca="A-3"
+              ></i>
+              <i
+                class="fa-solid fa-couch icono-butaca disponible"
+                numero-butaca="A-4"
+              ></i>
+              <i
+                class="fa-solid fa-couch icono-butaca disponible"
+                numero-butaca="A-5"
+              ></i>
+            </div>
+            <div class="row container-pantalla">
+              <div class="col-12 pantalla text-center mt-5"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+          <div class="col-7 alert alert-danger d-none" role="alert">
+            Seleccione las butacas
+          </div>
+          <div class="col-7 text-center">
+            <button class="btn my-4" id="btn-continuar-butacas">
+              Continuar
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--FORMULARIO-->
+      <section class="container p-5 pt-0 d-none" id="contenedor-formulario">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="titulos-acciones mt-3">
+              <h4>Datos personales</h4>
+            </div>
+
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputNombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  minlength="2"
+                  maxlength="20"
+                  id="inputNombre"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputApellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="inputApellido" />
+              </div>
+              <div class="col-md-4">
+                <label for="inputID" class="form-label">ID</label>
+                <input type="text" class="form-control" id="inputID" />
+              </div>
+              <div class="col-4">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="inputSelector"
+                >
+                  <option value="0412">0412</option>
+                  <option value="0414">0414</option>
+                  <option value="0424">0424</option>
+                  <option value="0416">0416</option>
+                  <option value="0426">0426</option>
+                </select>
+              </div>
+              <div class="col-4">
+                <label for="telefono" class="form-label">&nbsp;</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputTelefono"
+                  minlength="7"
+                  maxlength="7"
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputDireccion" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="inputDireccion" />
+              </div>
+              <div class="col-12">
+                <label for="inputCorreo" class="form-label"
+                  >Correo Electrónico</label
+                >
+                <input type="email" class="form-control" id="inputCorreo" />
+              </div>
+
+              <div class="col-12">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#facturaGenerada"
+                  id="imprimir-factura"
+                >
+                  Imprimir Factura
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-------FOOTER------>
+    <footer>
+      <section class="container p-5">
+        <div class="row">
+          <div class="text-center col-md-6 text-md-start">
+            <p class="m-0">
+              &copy 2023 CineKoi. Todos los derechos reservados.
+            </p>
+            <p class="m-0">info@cinekoi.com</p>
+          </div>
+          <div class="text-center col-md-6 text-md-end">
+            <p class="mb-1">Siguenos en nuestras redes sociales:</p>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-2 border btn-outline-light"
+              >
+                <i class="bi bi-facebook"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-2 border btn-outline-light"
+              >
+                <i class="bi bi-instagram"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-2 border btn-outline-light"
+              >
+                <i class="bi bi-twitter"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!--MODAL-->
+    <div
+      class="modal fade"
+      id="facturaGenerada"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5">Factura</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!--FACTURA-->
+            <section class="container p-5 pt-0 d-none" id="contenedor-factura">
+              <div class="con-factura">
+                <div class="factura">
+                  <div class="head-factura">
+                    <h3 class="text-center fst-italic">Factura Digital</h3>
+                    <h3 class="text-center fst-italic">CineKoi</h3>
+                  </div>
+                  <h4 class="text-center">Datos del cliente</h4>
+                  <div class="contenedor-elemento">
+                    <div class="elemento">
+                      <p class="fw-bold">Cliente:</p>
+                      <p id="factura-nombre"></p>
+                      <p class="fw-bold">ID:</p>
+                      <p id="factura-id"></p>
+                      <p class="fw-bold">Dirección:</p>
+                      <p id="factura-direccion"></p>
+                    </div>
+                    <div class="elemento">
+                      <p class="fw-bold">Telefono:</p>
+                      <p id="factura-telefono"></p>
+                      <p class="fw-bold">Correo Electrónico:</p>
+                      <p id="factura-correo"></p>
+                    </div>
+                  </div>
+                  <h4 class="text-center titulo-funcion">
+                    Datos de la funcion
+                  </h4>
+                  <p class="fw-bold" id="factura-pelicula"></p>
+                  <p class="fw-bold">Butacas:</p>
+                  <p id="factura-butacas"></p>
+                  <p class="fw-bold">Hora:</p>
+                  <p id="factura-hora"></p>
+                  <p class="fw-bold">Sala:</p>
+                  <p id="factura-sala"></p>
+                  <p class="fw-bold">
+                    Boletos: <span id="factura-boletos"></span
+                    ><span id="factura-precio"></span>
+                  </p>
+                  <p class="fw-bold">TOTAL: <span id="factura-total"></span></p>
+                  <div class="footer-factura">
+                    <p class="text-center fst-italic">
+                      --- Gracias por su compra ---
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/dfbcb44511.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Main Script-->
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+h1 {
+  font-weight: 700;
+  color: #c32a2a;
+  font-size: 50px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.titulo-nav {
+  font-family: "Roboto Mono", monospace;
+}
+/* NAVBAR*/
+
+.navbar {
+  background-color: #c32a2a;
+}
+.titulo-nav {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+
+/* PORTADA */
+
+.portada {
+  height: 75vh;
+  background: url("../img/portada.jpg") top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.portada-texto {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: 700;
+}
+
+/*CARTELERA */
+.cartelera {
+  background-color: #c32a2a41;
+}
+.peliculas img {
+  width: 350px;
+  height: 480px;
+}
+
+/* BOTONES */
+
+.btn {
+  color: #fff;
+  background-color: #c32a2a;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #03658c;
+}
+/* PELICULAS COMPRAS*/
+
+.info-pelicula h5 {
+  color: #c32a2a;
+  border-bottom: 1px solid #808080b7;
+  margin-top: 10px;
+}
+
+.info-pelicula p {
+  margin-bottom: 5px;
+}
+
+/* DATOS FUNCION */
+
+.caja-datos-funcion {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab-content {
+  background-color: #ededed;
+}
+
+.titulos-acciones h4 {
+  color: #c32a2a;
+  border-bottom: 1px solid #808080b7;
+}
+
+.link-fecha {
+  background-color: #c32a2a !important;
+}
+
+/*COMPRA DE BOLETOS*/
+
+.btn-cantidad {
+  width: 35px;
+  height: 35px;
+}
+.cantidad {
+  padding: 5px 10px;
+}
+.fa-circle-minus,
+.fa-circle-plus {
+  font-size: 20px;
+  color: #c32a2a;
+}
+
+/* BUTACAS */
+
+.butacas i:hover {
+  color: #c32a2a;
+}
+
+.disponible {
+  color: #03658c;
+  padding: 10px;
+  font-size: 80px;
+}
+.seleccionado {
+  color: #c32a2a;
+  padding: 10px;
+  font-size: 80px;
+}
+.pantalla {
+  height: 30px;
+  background-color: grey;
+  border-radius: 0 0 500px 500px;
+}
+
+.info-disponible {
+  color: #03658c;
+}
+.info-seleccionado {
+  color: #c32a2a;
+}
+.titulo-butaca h4 {
+  color: #c32a2a;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #808080;
+}
+
+.factura {
+  padding: 20px;
+  min-width: 400px;
+  background: url("../img/papel3.jpg") top center;
+  background-size: cover;
+  /* background-image: url("../img/papel2.jpg"); */
+}
+.con-factura {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-elemento {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-factura {
+  border-bottom: 1px solid #c32a2a;
+}
+.footer-factura {
+  border-top: 1px solid #c32a2a;
+}
+.factura p {
+  margin: 5px;
+}
+
+.titulo-funcion {
+  border-top: 1px solid #c32a2a;
+}
+/* FOOTER */
+
+footer {
+  background-color: #ededed;
+}

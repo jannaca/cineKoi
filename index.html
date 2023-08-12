@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icono -->
+    <link rel="icon" href="img/icon.png" type="image/x-icon" />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css" />
+
+    <title>CineKoi</title>
+  </head>
+  <!------MENU-------->
+  <header>
+    <!-- Menu de Navegacion-->
+    <nav>
+      <div class="navbar navbar-dark navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand link-light titulo-nav" href="index.html"
+            >Cinekoi</a
+          >
+          <button
+            class="navbar-toggler border-light-subtle"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link link-light"
+                  aria-current="page"
+                  href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link-light"
+                  aria-current="page"
+                  href="#cartelera"
+                  >Cartelera</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <!------PORTADA--------->
+      <section class="container-fluid portada">
+        <div class="container portada-texto">
+          <h1>CineKoi</h1>
+          <h3 class="fst-italic">La magia de la gran pantalla.</h3>
+          <h4 class="fst-italic">Emocionantes películas.</h4>
+        </div>
+      </section>
+      <!-------CARTELERA------>
+      <section class="container-fluid p-4 cartelera" id="cartelera">
+        <div class="container">
+          <h2 class="text-center mb-4">Cartelera</h2>
+          <div class="row peliculas">
+            <div class="col-lg-4 text-center mb-3">
+              <img
+                src="img/pelicula-mario.webp"
+                alt="Portada pelicula Mario"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-4 text-center mb-3">
+              <img
+                src="img/pelicula-suzume.jpg"
+                alt="Portada pelicula Suzume"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-4 text-center mb-3">
+              <img
+                src="img/pelicula-antman.jpeg"
+                alt="Portada pelicula Antman"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-6 text-center">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Adquirir Boletos
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-------FOOTER------>
+    <footer>
+      <section class="container p-5">
+        <div class="row">
+          <div class="text-center col-md-6 text-md-start">
+            <p class="m-0">
+              &copy 2023 CineKoi. Todos los derechos reservados.
+            </p>
+            <p class="m-0">info@cinekoi.com</p>
+          </div>
+          <div class="text-center col-md-6 text-md-end">
+            <p class="mb-1">Siguenos en nuestras redes sociales:</p>
+            <div class="btn-group" role="group" aria-label="First group">
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-2 border btn-outline-light"
+              >
+                <i class="bi bi-facebook"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-2 border btn-outline-light"
+              >
+                <i class="bi bi-instagram"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-2 border btn-outline-light"
+              >
+                <i class="bi bi-twitter"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Ingrese precio de la entrada
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label for="">Precio de Entrada</label>
+            <input type="text" id="inputPrecio" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <button type="button" class="btn" id="btn-generar-precio">
+              Continuar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--JS-->
+    <script src="js/precio.js"></script>
+  </body>
+</html>
